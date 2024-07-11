@@ -8,14 +8,34 @@
     "css": "app/globals.css",
     "baseColor": "neutral",
     "cssVariables": true,
-    "prefix": ""
+    "prefix": "ui"
   },
   "aliases": {
     "components": "@/components",
     "utils": "@/lib/utils",
     "ui": "@/components/ui",
     "lib": "@/lib",
-    "hooks": "@/hooks"
+    "hooks": "@/hooks",
+    "context": "@/context",
+    "services": "@/services",
+    "assets": "@/assets"
   },
-  "iconLibrary": "lucide"
+  "iconLibrary": "lucide",
+  "experimentalFeatures": {
+    "animatedComponents": true,
+    "darkModeVariants": true,
+    "responsiveTypography": true
+  },
+  "defaultComponents": [
+    "button",
+    "card",
+    "modal",
+    "tooltip",
+    "dropdown"
+  ],
+  "configurations": {
+    "enableStrictMode": true,
+    "autoImport": true,
+    "treeShaking": true
+  }
 }
