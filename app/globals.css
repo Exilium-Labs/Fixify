@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 10, 10, 10;
+}
+
+html,
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb));
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+p {
+  font-weight: 400;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-glow {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
+}
+
+main {
+  position: relative;
+  z-index: 10;
+}
+
+section {
+  position: relative;
+  z-index: 20;
+}
+
+header {
+  background-color: rgba(10, 10, 10, 0.8) !important;
+  backdrop-filter: blur(8px);
+}
+
+#tsparticles {
+  position: fixed !important;
+}
+
+/* Dashboard specific styles */
+.dashboard-content {
+  background-color: #1a1a1a;
+}
+
+.dashboard-sidebar {
+  background-color: #0f0f0f;
+}
+
+.suggestion-card {
+  background-color: #2a2a2a;
+  transition: background-color 0.3s ease;
+}
+
+.suggestion-card:hover {
+  background-color: #3a3a3a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
