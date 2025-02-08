@@ -4,7 +4,7 @@
 
 **Fixify** is an AI-driven security engine designed to **detect, analyze, and patch vulnerabilities** in smart contracts. Built for **Solana and multi-chain ecosystems**, Fixify enhances security by providing **automated audits, real-time threat detection, and AI-assisted code fixes**.
 
-## 🔥 **Features**
+## **Features**
 - **AI-Based Vulnerability Detection** – Identifies weaknesses in smart contract code in real-time.
 - **Automated Security Patching** – Suggests and applies secure fixes without manual intervention.
 - **On-Chain Security Oracle** – Provides decentralized security scoring and auditing for smart contracts.
@@ -13,7 +13,7 @@
 
 ---
 
-## 🚀 **Quick Start**
+## **Quick Start**
 ### **Prerequisites**
 - A **Solana-compatible wallet** (Phantom, Solflare, Ledger)
 - SOL tokens for transactions
@@ -34,7 +34,7 @@ yarn start
 
 ---
 
-## 📖 **Basic Usage**
+## **Basic Usage**
 ```javascript
 import { Fixify } from "@fixify/sdk";
 
@@ -48,7 +48,7 @@ import { Fixify } from "@fixify/sdk";
 
 ---
 
-## ⚙️ **Architecture**
+## **Architecture**
 Fixify is built with a modular architecture for **scalability and performance**:
 
 - **Core** – AI-based security analysis and automation logic.
@@ -59,17 +59,17 @@ Fixify is built with a modular architecture for **scalability and performance**:
 
 ---
 
-## 🤝 **Contributing**
+## **Contributing**
 We welcome contributions! Please see our **[Contributing Guide](#)** for details.
 
 ---
 
-## 📜 **License**
+## **License**
 This project is licensed under the **MIT License** – see the LICENSE file for details.
 
 ---
 
-## 🔗 **Contact**
+## **Contact**
 - 🐦 **Twitter:** [@Fixify_AI](#)
 - 🌐 **Website:** [Fixify.io](#)
 - 💬 **Discord:** [Join our community](#)
