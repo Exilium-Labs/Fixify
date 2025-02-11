@@ -65,7 +65,7 @@ p {
   animation: gradient 3s ease infinite;
 }
 
-main {
+main {   
   position: relative;
   z-index: 10;
 }
