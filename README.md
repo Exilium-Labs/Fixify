@@ -1,4 +1,4 @@
-# Fixify - AI-Powered Smart Contract Security
+# Fixify - AI-Powered Smart Contract Security 
 
 ![Fixify Banner](https://raw.githubusercontent.com/Exilium-Labs/Fixify/refs/heads/main/Banner.png)
 
