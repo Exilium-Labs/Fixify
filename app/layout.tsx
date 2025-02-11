@@ -24,7 +24,7 @@ export default function RootLayout({
       </head>
       <body className="bg-[#0A0A0A]">
         <ParticlesBackground />
-        <div className="relative z-10">{children}</div>
+        <div className="relative z-10">{children}</div> 
       </body>
     </html>
   )
