@@ -21,18 +21,20 @@ export function joinClass(...classes: (string | undefined | null)[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
-/**
- * Toggles a class based on a condition.
- *
- * @param base - The base class
- * @param condition - A boolean determining whether to add the extra class
- * @param toggledClass - The class to toggle if condition is true
- * @returns The final class string
- */
 export function toggleClass(
   base: string,
   condition: boolean,
   toggledClass: string
 ): string {
   return condition ? `${base} ${toggledClass}` : base;
+}
+
+/**
+ * Converts a class string into an array of unique class names.
+ *
+ * @param classString - A space-separated class string
+ * @returns An array of unique class names
+ */
+export function classListToArray(classString: string): string[] {
+  return [...new Set(classString.split(/\s+/).filter(Boolean))];
 }
