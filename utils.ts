@@ -38,3 +38,14 @@ export function toggleClass(
 export function classListToArray(classString: string): string[] {
   return [...new Set(classString.split(/\s+/).filter(Boolean))];
 }
+
+/**
+ * Removes a specific class from a class string.
+ *
+ * @param classString - The original class string
+ * @param classToRemove - The class to remove
+ * @returns A new class string without the specified class
+ */
+export function removeClass(classString: string, classToRemove: string): string {
+  return classListToArray(classString).filter(cls => cls !== classToRemove).join(" ");
+}
