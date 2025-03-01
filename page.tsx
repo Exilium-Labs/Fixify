@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
 import Features from "./components/Features";
 import UseCases from "./components/UseCases";
-import WhyVIGLO from "./components/WhyVIGLO";
+import WhyFixify from "./components/WhyFixify"; // Renamed from WhyVIGLO
 import Footer from "./components/Footer";
 import { Suspense } from "react";
 
@@ -39,8 +39,8 @@ export default function Home() {
       <section id="use-cases">
         <UseCases />
       </section>
-      <section id="why-viglo">
-        <WhyVIGLO />
+      <section id="why-fixify">
+        <WhyFixify />
       </section>
       <Suspense fallback={<p className="text-center text-gray-400">Loading Dashboard...</p>}>
         <section id="live-dashboard">
