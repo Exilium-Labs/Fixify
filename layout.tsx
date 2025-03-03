@@ -6,27 +6,27 @@ import type React from "react";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "VIGLO",
-  description: "AI-Powered Fraud Detection on Solana",
+  title: "Fixify",
+  description: "AI-Powered Yield Optimization on Solana",
   generator: "v0.dev",
-  applicationName: "VIGLO",
-  keywords: ["AI", "Fraud Detection", "Solana", "Blockchain", "Security"],
-  authors: [{ name: "VIGLO Team", url: "https://viglo.com" }],
-  creator: "VIGLO",
+  applicationName: "Fixify",
+  keywords: ["AI", "DeFi", "Solana", "Yield", "Security", "Blockchain"],
+  authors: [{ name: "Fixify Team", url: "https://fixify.io" }],
+  creator: "Fixify",
   themeColor: "#000000",
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "VIGLO - AI-Powered Fraud Detection",
-    description: "Protect your assets with AI-driven fraud detection on Solana.",
-    url: "https://viglo.com",
-    siteName: "VIGLO",
+    title: "Fixify - AI-Powered DeFi Optimization",
+    description: "Automate and optimize yield farming with AI on Solana.",
+    url: "https://fixify.io",
+    siteName: "Fixify",
     type: "website",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/openart-image_f3n-YsTm_1736231910487_raw.jpg-C8QuPQsopNG8KeRVHe1HzUk8ULBAh2.jpeg",
+        url: "https://fixify-public-assets.vercel.app/og-image.jpeg",
         width: 1200,
         height: 630,
-        alt: "VIGLO Fraud Detection",
+        alt: "Fixify OpenGraph Preview",
       },
     ],
   },
@@ -45,12 +45,12 @@ export default function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <link
           rel="preload"
-          href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/openart-image_f3n-YsTm_1736231910487_raw.jpg-C8QuPQsopNG8KeRVHe1HzUk8ULBAh2.jpeg"
+          href="https://fixify-public-assets.vercel.app/og-image.jpeg"
           as="image"
         />
         <link
           rel="icon"
-          href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/openart-image_f3n-YsTm_1736231910487_raw.jpg-C8QuPQsopNG8KeRVHe1HzUk8ULBAh2.jpeg"
+          href="https://fixify-public-assets.vercel.app/og-image.jpeg"
           type="image/jpeg"
         />
         <link rel="manifest" href="/site.webmanifest" />
