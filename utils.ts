@@ -31,9 +31,6 @@ export function toggleClass(
 
 /**
  * Converts a class string into an array of unique class names.
- *
- * @param classString - A space-separated class string
- * @returns An array of unique class names
  */
 export function classListToArray(classString: string): string[] {
   return [...new Set(classString.split(/\s+/).filter(Boolean))];
@@ -41,11 +38,29 @@ export function classListToArray(classString: string): string[] {
 
 /**
  * Removes a specific class from a class string.
- *
- * @param classString - The original class string
- * @param classToRemove - The class to remove
- * @returns A new class string without the specified class
  */
 export function removeClass(classString: string, classToRemove: string): string {
   return classListToArray(classString).filter(cls => cls !== classToRemove).join(" ");
+}
+
+/**
+ * Appends a new class to the end of a class string if not already present.
+ */
+export function appendClass(classString: string, newClass: string): string {
+  const classList = classListToArray(classString);
+  if (!classList.includes(newClass)) {
+    classList.push(newClass);
+  }
+  return classList.join(" ");
+}
+
+/**
+ * Prepends a new class to the beginning of a class string if not already present.
+ */
+export function prependClass(classString: string, newClass: string): string {
+  const classList = classListToArray(classString);
+  if (!classList.includes(newClass)) {
+    classList.unshift(newClass);
+  }
+  return classList.join(" ");
 }
