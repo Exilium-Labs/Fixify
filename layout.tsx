@@ -31,7 +31,6 @@ export const metadata: Metadata = {
     ],
   },
 };
-// Top part remains unchanged...
 
 export default function RootLayout({
   children,
@@ -44,6 +43,9 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Fixify - AI-Powered DeFi Optimization" />
         <meta name="twitter:description" content="Automate and optimize yield farming with AI on Solana." />
@@ -61,11 +63,9 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      // Everything above stays the same...
       <body className={`${inter.className} antialiased`} style={{ minHeight: "100dvh" }}>
         <div role="main">{children}</div>
       </body>
     </html>
   );
 }
-
