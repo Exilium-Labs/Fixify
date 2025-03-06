@@ -31,11 +31,13 @@
     "card",
     "modal",
     "tooltip",
-    "dropdown"
+    "dropdown",
+    "form",
+    "accordion"
   ],
   "configurations": {
     "enableStrictMode": true,
     "autoImport": true,
     "treeShaking": true
-  }   
+  }
 }
