@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     ],
   },
 };
+// Top part remains unchanged...
 
 export default function RootLayout({
   children,
@@ -43,6 +44,11 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Fixify - AI-Powered DeFi Optimization" />
+        <meta name="twitter:description" content="Automate and optimize yield farming with AI on Solana." />
+        <meta name="twitter:image" content="https://fixify-public-assets.vercel.app/og-image.jpeg" />
+        <link rel="canonical" href="https://fixify.io" />
         <link
           rel="preload"
           href="https://fixify-public-assets.vercel.app/og-image.jpeg"
