@@ -38,6 +38,7 @@
   "configurations": {
     "enableStrictMode": true,
     "autoImport": true,
-    "treeShaking": true
+    "treeShaking": true,
+    "showLogs": true
   }
 }
