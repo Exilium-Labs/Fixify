@@ -51,6 +51,8 @@ export default function RootLayout({
         <meta name="twitter:description" content="Automate and optimize yield farming with AI on Solana." />
         <meta name="twitter:image" content="https://fixify-public-assets.vercel.app/og-image.jpeg" />
         <link rel="canonical" href="https://fixify.io" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link
           rel="preload"
           href="https://fixify-public-assets.vercel.app/og-image.jpeg"
