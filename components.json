@@ -33,7 +33,10 @@
     "tooltip",
     "dropdown",
     "form",
-    "accordion"
+    "accordion",
+    "input",
+    "badge",
+    "tabs"
   ],
   "configurations": {
     "enableStrictMode": true,
