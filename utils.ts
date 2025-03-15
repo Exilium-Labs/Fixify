@@ -84,3 +84,12 @@ export function toggleClassValue(classString: string, className: string): string
   }
   return [...classList, className].join(" ");
 }
+
+// Everything above remains...
+
+/**
+ * Merges two class strings and removes duplicates.
+ */
+export function mergeClassSet(...classStrings: string[]): string {
+  return [...new Set(classStrings.flatMap(cls => cls.split(/\s+/)).filter(Boolean))].join(" ");
+}
