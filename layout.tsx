@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
@@ -66,7 +66,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={`${inter.className} antialiased`} style={{ minHeight: "100dvh" }}>
-        <div role="main">{children}</div>
+        <main id="app" role="main">{children}</main>
       </body>
     </html>
   );
