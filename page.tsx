@@ -18,7 +18,14 @@ const DynamicJoinRevolution = dynamic(() => import("./components/JoinRevolution"
   loading: () => <p className="text-center text-gray-400">Fixify is powering up engagement tools...</p>,
   ssr: false,
 });
-// same as above, but add animated div
+
+import Head from "next/head";
+// inside component before <main>:
+<Head>
+  <title>Fixify — AI-Powered Solana Yield Insights</title>
+  <meta name="description" content="Fixify helps you unlock data-driven DeFi insights on Solana with real-time dashboards and predictive tools." />
+</Head>
+
 
 // ... top of file
 export default function Home() {
