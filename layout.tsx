@@ -61,7 +61,11 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={inter.className}>{children}</body>
+      // Everything above stays the same...
+      <body className={`${inter.className} antialiased`} style={{ minHeight: "100dvh" }}>
+        <div role="main">{children}</div>
+      </body>
     </html>
   );
 }
+
