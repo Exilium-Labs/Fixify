@@ -32,6 +32,19 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Fixify",
+  url: "https://fixify.io",
+  logo: "https://fixify-public-assets.vercel.app/og-image.jpeg",
+  sameAs: [
+    "https://twitter.com/fixify",
+    "https://github.com/fixify",
+    "https://linkedin.com/company/fixify"
+  ]
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -64,6 +77,10 @@ export default function RootLayout({
           type="image/jpeg"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </head>
       <body className={`${inter.className} antialiased`} style={{ minHeight: "100dvh" }}>
         <main id="app" role="main">{children}</main>
