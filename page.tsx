@@ -29,6 +29,11 @@ import Head from "next/head";
 
 // ... top of file
 export default function Home() {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="bg-gray-900 text-white overflow-x-hidden relative" aria-label="FIXIFY Main Content">
       <div className="absolute inset-0 z-0 opacity-10 animate-pulse bg-gradient-to-br from-fuchsia-500 via-indigo-600 to-blue-500 blur-3xl" />
