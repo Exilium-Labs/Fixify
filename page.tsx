@@ -1,5 +1,3 @@
-// Same as Commit 1, with updated `aria-label` for better semantic structure
-
 import dynamic from "next/dynamic";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
@@ -12,7 +10,7 @@ import { Suspense } from "react";
 const DynamicLiveDashboard = dynamic(
   () => import("./components/LiveDashboard"),
   {
-    loading: () => <p className="text-center text-gray-400">Loading Live Dashboard...</p>,
+    loading: () => <p className="text-center text-gray-400">Fixify is preparing your live insights...</p>,
     ssr: false,
   }
 );
@@ -20,7 +18,7 @@ const DynamicLiveDashboard = dynamic(
 const DynamicJoinRevolution = dynamic(
   () => import("./components/JoinRevolution"),
   {
-    loading: () => <p className="text-center text-gray-400">Loading Join Revolution...</p>,
+    loading: () => <p className="text-center text-gray-400">Fixify is powering up engagement tools...</p>,
     ssr: false,
   }
 );
@@ -41,12 +39,12 @@ export default function Home() {
       <section id="why-fixify" aria-label="Why Choose Fixify">
         <WhyFixify />
       </section>
-      <Suspense fallback={<p className="text-center text-gray-400">Loading Dashboard...</p>}>
+      <Suspense fallback={<p className="text-center text-gray-400">Fixify is preparing your live insights...</p>}>
         <section id="live-dashboard" aria-label="Live Analytics Dashboard">
           <DynamicLiveDashboard />
         </section>
       </Suspense>
-      <Suspense fallback={<p className="text-center text-gray-400">Loading Join Revolution...</p>}>
+      <Suspense fallback={<p className="text-center text-gray-400">Fixify is powering up engagement tools...</p>}>
         <section id="join" aria-label="Join the Fixify Movement">
           <DynamicJoinRevolution />
         </section>
