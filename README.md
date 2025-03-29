@@ -70,9 +70,8 @@ This project is licensed under the **MIT License** – see the LICENSE file for 
 ---
 
 ## **Contact**
-- 🐦 **Twitter:** [@Fixify_AI](#)
-- 🌐 **Website:** [Fixify.io](#)
-- 💬 **Discord:** [Join our community](#)
+- 🐦 **Twitter:** [@ExiliumLabs](https://x.com/exilium_labs)
+- 🌐 **Website:** [ExiliumLabs](https://www.exiliumlabs.com/)
 
 ---
 
