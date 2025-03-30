@@ -119,3 +119,15 @@ export function replaceClass(
     .map(cls => (cls === fromClass ? toClass : cls))
     .join(" ");
 }
+
+/**
+ * Memoized split function to improve performance on repeated calls.
+ */
+function memoizedSplit(str: string): string[] {
+  return str.trim().split(/\s+/).filter(Boolean);
+}
+
+// Update classListToArray to use memoizedSplit:
+export function classListToArray(classString: string): string[] {
+  return [...new Set(memoizedSplit(classString))];
+}
