@@ -135,3 +135,10 @@ export function stripClassPrefix(classString: string, prefix: string): string {
 export function normalizeClassString(classString: string): string {
   return classListToArray(classString).sort().join(" ");
 }
+
+/**
+ * Cleans up a class string by removing any empty or unnecessary classes.
+ */
+export function cleanClass(classString: string): string {
+  return classListToArray(classString).filter(cls => cls.trim() !== "").join(" ");
+}
