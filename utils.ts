@@ -121,13 +121,10 @@ export function replaceClass(
 }
 
 /**
- * Memoized split function to improve performance on repeated calls.
+ * Strips a prefix from all class names.
  */
-function memoizedSplit(str: string): string[] {
-  return str.trim().split(/\s+/).filter(Boolean);
-}
-
-// Update classListToArray to use memoizedSplit:
-export function classListToArray(classString: string): string[] {
-  return [...new Set(memoizedSplit(classString))];
+export function stripClassPrefix(classString: string, prefix: string): string {
+  return classListToArray(classString)
+    .map(cls => (cls.startsWith(prefix) ? cls.slice(prefix.length) : cls))
+    .join(" ");
 }
