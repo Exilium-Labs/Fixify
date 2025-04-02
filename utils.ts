@@ -128,3 +128,10 @@ export function stripClassPrefix(classString: string, prefix: string): string {
     .map(cls => (cls.startsWith(prefix) ? cls.slice(prefix.length) : cls))
     .join(" ");
 }
+
+/**
+ * Normalizes whitespace and sorts class names alphabetically.
+ */
+export function normalizeClassString(classString: string): string {
+  return classListToArray(classString).sort().join(" ");
+}
