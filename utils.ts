@@ -142,3 +142,12 @@ export function normalizeClassString(classString: string): string {
 export function cleanClass(classString: string): string {
   return classListToArray(classString).filter(cls => cls.trim() !== "").join(" ");
 }
+
+/**
+ * Adds a prefix to each class name in a string.
+ */
+export function prefixClass(classString: string, prefix: string): string {
+  return classListToArray(classString)
+    .map(cls => `${prefix}${cls}`)
+    .join(" ");
+}
